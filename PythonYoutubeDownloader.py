@@ -48,12 +48,14 @@ def CreateWidgets():
     root.videoLabel.grid(row=4, columnspan=3, padx = 5, pady = 5, column=0)
 
 # Defining Browse() to select a destination folder to save the video
+
 def Browse():
     # Presenting user with a pop-up for directory selection. initialdir argument is optional
     # Retrieving the user-input destination directory and storing it in downloadDirectory
     downloadDirectory = filedialog.askdirectory(initialdir="/Users/abhijithwarrier/Movies")
     # Displaying the directory in the directory textbox
     downloadPath.set(downloadDirectory)
+    
 
 # Defining Download() to download the video
 def Download():
